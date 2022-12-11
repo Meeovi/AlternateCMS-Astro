@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
-import svelte from '@astrojs/svelte';
+//import svelte from '@astrojs/svelte';
 import vue from '@astrojs/vue';
 
 // https://astro.build/config
@@ -15,5 +15,5 @@ import partytown from "@astrojs/partytown";
 export default defineConfig({
   output: 'server',
   adapter: netlify(),
-  integrations: [react(), vue(), svelte(), prefetch(), sitemap(), partytown()]
+  integrations: [react(), vue(), prefetch(), sitemap(), partytown()]
 });

@@ -1,4 +1,7 @@
-<template>
+---
+import template from '../../../layouts/template.astro'
+---
+<template title=" ">
     <div>
 
     </div>

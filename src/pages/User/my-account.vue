@@ -1,4 +1,7 @@
-<template>
+---
+import template from '../../../layouts/template.astro'
+---
+<template title=" ">
   <section class="section">
     <div class="container">
       <h2 class="title">My Profile</h2>

@@ -1,4 +1,4 @@
-require("reflect-metadata");
+import 'reflect-metadata';
 
 import { buildSchema } from "type-graphql";
 import * as path from "path";

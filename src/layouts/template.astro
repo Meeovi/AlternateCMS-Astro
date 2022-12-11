@@ -1,0 +1,29 @@
+---
+import Header from '../components/Header.astro'
+import Breadcrumbs from '../components/Breadcrumbs.astro'
+import Footer from '../components/Footer.astro'
+const { title } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title title={title}></title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' />
+    <link rel='stylesheet' href='../../public/mdb/plugins/css/all.min.css' />
+    <link rel='stylesheet' href='../../public/mdb/css/mdb.min.css' />
+    <link rel='stylesheet' href='../../public/styles/styles.css' />
+    <script src ='../../public/mdb/plugins/js/all.min.js' />
+    <script src ='../../public/mdb/js/mdb.min.js' />
+    <script src ='../../public/scripts/main.js' />
+  </head>
+  <body>
+      <main class="mb-5" style="margin-top: -55px;">
+        <Header />
+        <Breadcrumbs />
+        <slot />
+      </main>
+      <Footer />
+</body>
+</html>
